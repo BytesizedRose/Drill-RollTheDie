@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(140deg, rgb(255, 192, 231), rgb(252, 100, 250), rgb(229, 148, 209), rgb(246, 117, 226))
+}
+.top{
+    margin-top: 10px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.die{
+    height: 400px;
+    width: 400px;
+    background: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+}
+.dot{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    background: black;
+    border-radius: 50%;
+}
+.bot{
+    width: 450px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.button{
+    height: 100%;
+    width: 200px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 75px;
+}
+.button:hover{
+    background: rgb(186, 185, 185);
+}
+.button:active{
+    background: rgb(206, 206, 206);
+    transform: scale(.98);
+}
